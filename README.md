@@ -20,7 +20,7 @@ The Market-1501 dataset which was collected in front of a supermarket in Tsinghu
 
 ## [SOTA of Person Re-Identification on Market-1501 from Paperwithcode](https://paperswithcode.com/sota/person-re-identification-on-market-1501) 
 
-<div align=center><img src="https://github.com/Mu-ING/Person-ReID-Triplet-Loss-Model-based-on-Tensorflow/blob/master/Photos/SOTA%20ReID%20on%20Market-1501.png" width="1200" height="420"></div> 
+<div align=center><img src="https://github.com/Mu-ING/Person-ReID-Triplet-Loss-Model-based-on-Tensorflow/blob/master/Photos/SOTA%20ReID%20on%20Market-1501.png" width="1200" height="380"></div> 
 
 ## MobileNetV2
 MobileNetV2 is a light but very effective feature extractor for object detection and segmentation. It builds upon the kernel of MobileNetV1 - depthwise separable convolution, and introduces two new features to the architecture: linear bottlenecks and inverted residuals (shortcut connections between the bottlenecks). The basic structure is shown below.
@@ -35,8 +35,14 @@ MobileNetV2 is a light but very effective feature extractor for object detection
 
 ## Triplet Loss
 ### 1.Basic Triplet Loss
+Trhiplet loss was firstly introduced in the FaceNet paper, which is a loss function that trains a neural network to closely embed features of the same class (an anchor and a positive sample, both of which have the same identity) while maximizing the distance between feature embeddings of different classes (the anchor and a negative sample of a different identity). In this project, the anchor is one image of a person, the positive sample is one of the other images of the same person and the negative sample is an image of a different person. In basic triplet loss mode, the set of anchor, positive and negative is chosen randomly.
+
+<div align=center><img src="https://github.com/Mu-ING/Person-ReID-Triplet-Loss-Model-based-on-Tensorflow/blob/master/Photos/tripletloss.jpg" width="580" height="150"></div>
+
 ### 2.Triplet Hard Loss
+
 ### 3.Triplet Semi-hard Loss
+
 # Coding
 ## Environment
 ## Installation
@@ -55,3 +61,4 @@ MobileNetV2 is a light but very effective feature extractor for object detection
 - Alexander Hermans, Lucas Beyer, and Bastian Leibe. [In Defense of the Triplet Loss for Person Re-Identification](https://arxiv.org/abs/1703.07737), 2017
 - Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, and Liang-Chieh Chen. [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381), CVPR 2018
 - Guangcong Wang, Jianhuang Lai, Peigen Huang, and Xiaohua Xie.[Spatial-Temporal Person Re-identification](https://arxiv.org/abs/1812.03282),CVPR 2019
+- TensorFlow Addons Losses: [TripletSemiHardLoss](https://www.tensorflow.org/addons/tutorials/losses_triplet)
