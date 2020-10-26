@@ -1,4 +1,4 @@
-# Person ReID using Triplet Loss in Tensorflow
+# Person ReID Triplet Loss Model based on Tensorflow
 Tensorflow implementation of person re-identification using MobileNetV2 with variants of triplet loss on Market-1501 dataset. 
 This project is part of the course offered by [July.edu](http://www.julyedu.com/) and thus I can't release the code in Tensorflow to the public, but I would love present and discuss about my code in a private way. Furthermore, I will reproduce the code in Pytorch and share it soon.
 # Background
